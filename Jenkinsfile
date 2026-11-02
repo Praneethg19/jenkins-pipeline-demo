@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'Starting Build'
+                echo 'Starting Build - Automatic Trigger Test'
                 bat 'if not exist build mkdir build'
                 bat 'echo Build Successful > build\\output.txt'
             }
