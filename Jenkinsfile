@@ -13,7 +13,7 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Starting Test'
-                bat 'if exist build\\output.txt (echo TEST PASSED) else (exit /b 1)'
+                bat 'exit /b 1'
             }
         }
     }
